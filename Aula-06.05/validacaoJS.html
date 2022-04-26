@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="validacao.js"></script>
+
+    <style>
+
+        .container{
+            width: 300px;
+        }
+        input{
+            width: 100%;
+        }
+        button{
+            margin-top: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body onload="onSubmit()">
+
+    <div class="container">
+
+        <form action="#" class="was-validated">
+
+            <div>
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" class="form-control" placeholder="Informe nome"></input>
+                <label id="msgNome"></label>
+            </div>
+
+            <div>
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" id="email" class="form-control" placeholder="Informe um e-mail"></input>
+                <label id="msgEmail"></label>
+            </div>
+
+            <div>
+                <label for="telefone" class="form-label">Telefone</label>
+                <input type="text" id="telefone" class="form-control" placeholder="Informe um telefone"></input>
+                <label id="magTelefone"></label>
+            </div>
+
+            <div>
+                <button class="btn btn-outline-primary" onclick="onSubmit()">Salvar</button>
+                <button class="btn btn-outline-primary">Cancelar</button>
+            </div>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

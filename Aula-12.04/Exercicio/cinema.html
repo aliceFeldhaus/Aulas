@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema</title>
+
+    <script src="cinema.js"></script>
+
+    <style>
+        #sala button{
+            margin: 2px;
+        }
+        .livre{
+            background-color: green;
+        }
+        .ocupado{
+            background-color: red;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <p>Nosso cineminha</p>
+    <hr/>
+    <label for="total">Informe quantas cadeiras criar</label>
+    <input type="number" id="total" />
+    <button onclick="criarSala()">Criar sala</button>
+    <hr>
+    <div id="sala">
+        <!--Colocar botoes criados-->
+    </div>
+    <hr>
+    <label id="totalOcupacao"></label>
+
+</body>
+
+</html>

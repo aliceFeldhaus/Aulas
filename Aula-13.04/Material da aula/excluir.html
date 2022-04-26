@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excluir</title>
+
+    <script src="Scripts/classes.js"></script>
+
+</head>
+
+<body onload="pegarParametro()">
+
+    <label> Confirmar a exclusão? </label>
+    <button onclick="excluir()" >SiM</button>
+
+    <script>
+
+        var idContato = 0
+
+        function pegarParametro(){
+            const urlParams = new URLSearchParams(window.location.search)
+            idContato = urlParams.get('id')
+        }
+        function excluir(){
+            let ob = new Contato()
+            ob.excluir(idContato)
+        }
+
+    </script>
+
+</body>
+</html>

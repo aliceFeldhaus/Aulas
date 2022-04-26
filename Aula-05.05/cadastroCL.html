@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de clientes</title>
+
+    <link href="cadastroCL.css" rel="stylesheet">
+    <script src="cadastroCL.js"></script>
+
+</head>
+
+<body>
+
+    <h1>CADASTRO DE CLIENTES</h1>
+
+    <div class="cadastro">
+
+        <form action="#" method="POST">
+
+            <label>Nome</label>
+            <input type="text" id="nome" placeholder="informe um nome completo" ></input>
+
+            <label>Telefone</label>
+            <input type="number" id="telefone"placeholder="informe um telefone" min="8"></input>
+
+            <label>E-mail</label>
+            <input type="e-mail" id="email" placeholder="informe um nome e-mail" ></input>
+
+            <label>Rua</label>
+            <input type="text" id="rua" placeholder="informe o endereço" ></input>
+
+            <label>Bairro</label>
+            <input type="text" id="bairro" placeholder="informe o bairro" ></input>
+
+            <label>Cidade</label>
+            <input type="text" id="cidade" placeholder="informe a cidade" ></input>
+
+            <label>CEP</label>
+            <input type="number" id="CEP" placeholder="informe o CEP" ></input>
+
+            <label>Limite de crédito</label>
+            <input type="number" id="limite" placeholder="informe um limite de crédito" min="0"></input>
+
+            <label>Foto</label>
+            <input type="file" id="foto"></input>
+
+        </form>
+
+            <div class="div-botao">
+                <button class="botao" onclick="reset()">Cancelar</button>
+                <button class="botao" onclick="onSubmit()">Cadastrar</button>  
+            </div>
+    </div>
+
+
+</body>
+
+</html>

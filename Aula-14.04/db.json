@@ -1,0 +1,37 @@
+{
+  "clientes": [
+    {
+      "nome": "Alice",
+      "cep": "89046001",
+      "rua": "Rua José Reuter",
+      "numero": "3459",
+      "complemento": "até 1539 - lado ímpar",
+      "bairro": "Velha Central",
+      "cidade": "Blumenau",
+      "uf": "SC",
+      "id": 1
+    },
+    {
+      "nome": "Luan Lima",
+      "cep": "89046410",
+      "rua": "Rua Erwin Grahl",
+      "numero": "74",
+      "complemento": "Apt",
+      "bairro": "Velha Central",
+      "cidade": "Blumenau",
+      "uf": "SC",
+      "id": 2
+    },
+    {
+      "nome": "Rosalina",
+      "cep": "89046001",
+      "rua": "Rua José Reuter",
+      "numero": "3459",
+      "complemento": "Casa",
+      "bairro": "Velha Central",
+      "cidade": "Blumenau",
+      "uf": "SC",
+      "id": 3
+    }
+  ]
+}

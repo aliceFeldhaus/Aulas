@@ -1,0 +1,35 @@
+{
+  "contatos": [
+    {
+      "id": 1,
+      "nome": "Ana da silva",
+      "telefone": "1234-5678",
+      "email": "ana@gmail.com",
+      "foto": "./img/perfil.png"
+    },
+    {
+      "id": 2,
+      "nome": "Maria da silva",
+      "telefone": "1234-5678",
+      "email": "maria@gmail.com"
+    },
+    {
+      "id": 3,
+      "nome": "Jose da silva",
+      "telefone": "1234-5678",
+      "email": "jose@gmail.com"
+    },
+    {
+      "nome": "Alice Souza",
+      "telefone": "47992359225",
+      "email": "alice@gmail.com",
+      "id": 4
+    },
+    {
+      "nome": "Luan Lima",
+      "telefone": "4733301120",
+      "email": "luan@gmail.com",
+      "id": 5
+    }
+  ]
+}

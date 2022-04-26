@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+
+    <script src="Scripts/classes.js"></script>
+    <link href="estilos/estilos.css" rel="stylesheet">
+
+</head>
+
+<body onload="load()">
+
+    <table>
+
+        <thead>
+            <tr>
+                <th>IF</th>
+                <th>Nome</th>
+                <th>Telefone</th>
+                <th>E-mail</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!--Dados carregados dinamicamente-->
+        </tbody>
+
+    </table>
+
+    <script>
+
+        function load(){
+            let ob = new Contato();
+            ob.consultarTodos(displayGeral);
+        }
+        function displayGeral(dados){
+            let minhaLista = JSON.parse(dados)
+            var trs = ""
+            for (let indice in minhaLista){
+                trs += `<tr> 
+                            <td> ${minhaLista[indice].id} </td> 
+                            <td> ${minhaLista[indice].nome} </td>
+                            <td> ${minhaLista[indice].fone} </td> 
+                            <td> ${minhaLista[indice].email} </td> 
+                            <td> <a href='editar.html?id=${minhaLista[indice].id}'>Editar</a> </td>
+                            <td> <a href='excluir.html?id=${minhaLista[indice].id}'>Excluir</a> </td>
+                        </tr>`
+            }
+            document.getElementsByTagName("tbody")[0].innerHTML = trs;
+        }
+
+    </script>
+
+</body>
+
+</html>

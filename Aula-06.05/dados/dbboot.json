@@ -1,0 +1,16 @@
+{
+    "categorias":[
+        {
+            "name": "Produto importado"
+        },
+        { 
+            "name": "Produto nacional"
+        },
+        { 
+            "name": "Produto novo"
+        },
+        { 
+            "name": "Produto usado"
+        }
+    ]
+  }

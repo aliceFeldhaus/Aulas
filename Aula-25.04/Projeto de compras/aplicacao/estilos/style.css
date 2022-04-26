@@ -1,0 +1,30 @@
+.container{
+    width: 100%;
+    margin: 5px;
+    display: flex;
+}
+
+table{
+    width: 300px;
+    margin: 5px;
+}
+
+thead{
+    background-color: rgb(150, 82, 223);
+    color: white;
+    text-align: left;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(186, 147, 229);
+}
+
+tbody tr:hover{
+    background-color: rgb(133, 103, 165);
+    color: white;
+}
+
+label span{
+    color: red;
+    font-weight: 700;
+}

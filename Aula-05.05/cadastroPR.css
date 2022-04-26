@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background-color: rgb(45, 66, 49);
+}
+h1{
+    text-align: center;
+}
+.cadastro{
+    background-color: rgb(83, 98, 83);
+    padding: 2em 10em 1em 2em;
+    width: 10em;
+    margin-left: 29em;
+}
+label{
+    margin: 6px;
+    text-align: center;
+}
+input{
+    color: white;
+    margin: 5px;
+    text-align: center;
+    background-color: rgb(118, 128, 118);
+    border-radius: 5px;
+    border: 1px solid rgb(45, 66, 49);
+    width: 18em;
+}
+input:hover{
+    color: white;
+    background-color: rgb(45, 66, 49);
+}
+::placeholder{
+    color: white;
+}
+.div-botao{
+    margin: 0;
+    width: 45em;
+    display: inline-block;
+    padding-left: 3em;
+    padding-top: 0.5em;
+}
+.botao{
+    color: white;
+    background-color: rgb(45, 66, 49);
+    border-radius: 5px;  
+}
+.botao:hover{
+    border: none;
+    background-color: rgb(118, 128, 118);
+}
+#categorias{
+    color: white;
+    background-color: rgb(118, 128, 118);
+}
+#categorias:hover{
+    color: white;
+    background-color: rgb(45, 66, 49);
+}

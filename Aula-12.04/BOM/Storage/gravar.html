@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gravar</title>
+
+</head>
+
+<body>
+    
+    <input type="text" placeholder="Informe seu nome"></input>
+    <input type="password" placeholder="Informe sua senha"></input>
+
+    <button onclick="logar()">Logar</button>
+
+    <script>
+
+    function logar() {
+            localStorage.setItem("usuario", document.getElementsByTagName("input")[0].value)
+            localStorage.setItem("password", document.getElementsByTagName("input")[1].value)
+
+            sessionStorage.setItem("usuario", document.getElementsByTagName("input")[0].value)
+        }
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+  "produtos": [
+    {
+      "id": 1,
+      "descricao": "feijão",
+      "preco": 7,
+      "estoque": 1
+    },
+    {
+      "id": 2,
+      "descricao": "Arroz",
+      "preco": 15,
+      "estoque": 1
+    },
+    {
+      "descricao": "farinha",
+      "preco": 10,
+      "estoque": 1,
+      "id": 3
+    }
+  ],
+  "itens": [],
+  "carrinho": []
+}

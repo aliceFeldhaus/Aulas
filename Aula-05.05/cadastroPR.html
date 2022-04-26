@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de produtor</title>
+
+    <link href="cadastroPR.css" rel="stylesheet">
+    <script src="cadastroPR.js"></script>
+
+</head>
+
+<body onload="loadCategorias()">
+
+    <h1>CADASTRO DE PRODUTOS</h1>
+
+    <div class="cadastro">
+
+        <form action="#" method="POST">
+
+            <label>Descrição</label>
+            <input type="text" id="descricao" placeholder="informe uma descrição" ></input>
+
+            <label>Preço unitário</label>
+            <input type="number" id="preco" placeholder="informe um preço unitário" ></input>
+
+            <label>Unidade de medida</label>
+            <input type="number" id="unidade" placeholder="informe uma unidade de medida" ></input>
+
+            <label>Fornecedor</label>
+            <input type="text" id="fornecedor" placeholder="informe o fornecedor" ></input>
+
+            <label>Categoria</label>
+            <select id="categorias">
+                <!--Carregado pelo display-->
+            </select>
+
+        </form>
+
+        <div class="div-botao">
+            <button class="botao" onclick="reset()">Cancelar</button> 
+            <button class="botao" onclick="onSubmit()">Cadastrar</button>  
+        </div> 
+
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+.container{
+    width: 400px;
+    margin: auto;
+
+}
+
+.entrada{
+    width: 100%;
+}
+
+.botoes{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 100%;
+    margin-bottom: 3px;
+    padding: 3px 2px 3px 3px;
+}
+
+button{
+    border: 1px solid red;
+    padding: 3px;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+
+.salvar{
+    background-color: blue;
+    color: white;
+}
+
+.salvar:hover{
+    background-color: white;
+    color: blue;
+}
+
+.cancelar{
+    background-color: red;
+    color: white;
+}
+
+.cancelar:hover{
+    background-color: white;
+    color: red
+}
+
+table{
+    width: 600px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: rgb(207, 97, 57);
+    color: white;
+}
+
+tbody tr:nth-child(even){
+    background-color: rgb(238, 204, 192);
+}
+
+tbody tr:hover{
+    background-color: rgb(218, 150, 126);
+    color: white;
+}
+
+td{
+    padding: 5px;
+}
+
+th{
+    padding: 8px;
+    text-align: left;
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+a:hover{
+    color: white;
+}

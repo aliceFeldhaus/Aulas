@@ -1,0 +1,56 @@
+{
+  "Categorias": [
+    {
+      "id": 1,
+      "nome": "Alimento"
+    },
+    {
+      "id": 2,
+      "nome": "Produto de limpeza"
+    },
+    {
+      "id": 3,
+      "nome": "Produto de higiene pessoal"
+    },
+    {
+      "id": 4,
+      "nome": "Hortifruti"
+    }
+  ],
+  "Fornecedor": [
+    {
+      "id": 1,
+      "nome": "Transportadora JHT"
+    },
+    {
+      "id": 2,
+      "nome": "Frigorifico OPI"
+    },
+    {
+      "id": 3,
+      "nome": "Skyline"
+    },
+    {
+      "id": 4,
+      "nome": "Lotus"
+    }
+  ],
+  "Fornecedores_cadastrados": [
+    {
+      "descricao": "Caixa de suco",
+      "preco": "15",
+      "estoque": "50",
+      "fornecedor": "Fornecedor 1",
+      "categoria": "Categoria 2",
+      "id": 1
+    },
+    {
+      "descricao": "Cloro",
+      "preco": "3",
+      "estoque": "60",
+      "fornecedor": "Lotus",
+      "categoria": "Produto de limpeza",
+      "id": 2
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+    "produtos": [
+        {
+            "id":1,
+            "nome": "Feijão",
+            "descricao": "feijão preto",
+            "preco": "7.89",
+            "imagem": "./img/feijão.png"
+        },
+        {
+            "id":1,
+            "nome": "Açúcar",
+            "descricao": "Açúcar branco",
+            "preco": "7.89",
+            "imagem": "./img/acucar.png"
+        },
+        {
+            "id":1,
+            "nome": "Arroz",
+            "descricao": "Arroz branco",
+            "preco": "7.89",
+            "imagem": "./img/arroz.png"
+        },
+        {
+            "id":1,
+            "nome": "Café",
+            "descricao": "Café",
+            "preco": "7.89",
+            "imagem": "./img/cafe.png"
+        }
+        ,
+        {
+            "id":1,
+            "nome": "Leite",
+            "descricao": "Leite",
+            "preco": "7.89",
+            "imagem": "./img/leite.png"
+        },
+        {
+            "id":1,
+            "nome": "Ovo",
+            "descricao": "Uma dúzia de ovos",
+            "preco": "7.89",
+            "imagem": "./img/ovo.png"
+        }
+]
+}
