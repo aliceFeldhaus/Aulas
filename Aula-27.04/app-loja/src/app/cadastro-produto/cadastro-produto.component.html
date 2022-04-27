@@ -1,0 +1,37 @@
+<div class="container">
+    <form #f="ngForm" (ngSubmit)="gravar(f.value)">
+        <input class="form-control m-2" type="text" ngModel name="descricao" placeholder="Informe a descrição" />
+        <input class="form-control m-2" type="number" ngModel name="preco" placeholder="Informe o preço R$" />
+        <input class="form-control m-2" type="number" ngModel name="estoque" placeholder="Informe o estoque" />
+
+        <button class="btn btn-outline-primary m-2">Salvar</button>
+        <button class="btn btn-outline-danger m-2" (click)="limparMsg()" type="reset">Cancelar</button>
+
+    </form>
+
+    <label>{{ msg }}</label>
+
+</div>
+
+<div class="container">
+    <table class="table">
+        <thead class="bg-primary">
+            <tr>
+                <th>Id</th>
+                <th>Descrição</th>
+                <th>Preço</th>
+                <th>Estoque</th>
+                <th>Açoes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let prod of produtos">
+                <td> {{ prod.id }}</td>
+                <td> {{ prod.descricao }}</td>
+                <td> {{ prod.preco }}</td>
+                <td> {{ prod.estoque }}</td>
+                <td> <a [routerLink]="['/produtos',prod.id]"><i class="material-icons">mode_edit</i></a></td>
+            </tr>
+        </tbody>
+    </table>
+</div>

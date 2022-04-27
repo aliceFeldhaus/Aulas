@@ -1,0 +1,14 @@
+<div class="container">
+
+    <form #f="ngForm" (ngSubmit)="fazerLogin(f.value)">
+        <input class="form-control m-2" ngModel name="email" type="text" placeholder="Informe usuário"/>
+        <input class="form-control m-2" ngModel name="senha" type="password" placeholder="Informe senha"/>
+
+        <button class="btn btn-outline-primary m-2">Login</button>
+    </form>
+
+    <a class="m-2" routerLink="/cadastrousuario">Não é cadastrado?</a>
+
+</div>
+
+<router-outlet></router-outlet>
