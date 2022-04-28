@@ -14,10 +14,14 @@ export class EditaprodutoComponent implements OnInit {
 
   produto: any;
 
+  msg: string ="";
+
   ngOnInit(): void {
     let routeParams = this.route.snapshot.paramMap;
     let idproduto: number = Number(routeParams.get('idproduto'))
     this.serviceProduto.getOne(idproduto).subscribe(x => this.produto = x)
   }
-
+  efetivaAlteracao(){
+    this.serviceProduto.alterar(this.produto).subscribe(x => this.msg = "Registro alterado com sucesso")
+  }
 }

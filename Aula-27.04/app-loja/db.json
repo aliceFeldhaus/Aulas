@@ -1,22 +1,10 @@
 {
   "produtos": [
     {
-      "id": 1,
-      "descricao": "feijão",
-      "preco": 4,
-      "estoque": 20
-    },
-    {
       "descricao": "Caixa de suco",
       "preco": 4,
       "estoque": 4,
       "id": 2
-    },
-    {
-      "descricao": "Caixa de suco de morango",
-      "preco": 6,
-      "estoque": 1,
-      "id": 3
     },
     {
       "descricao": "Caixa de suco",
@@ -25,10 +13,28 @@
       "id": 4
     },
     {
-      "descricao": "Luan",
-      "preco": 100000,
-      "estoque": 1,
+      "descricao": "melancia",
+      "preco": "5,00",
+      "estoque": "10",
       "id": 5
+    },
+    {
+      "descricao": "feijão",
+      "preco": 3,
+      "estoque": 45,
+      "id": 6
+    },
+    {
+      "descricao": "Cloro",
+      "preco": 5,
+      "estoque": 12,
+      "id": 7
+    },
+    {
+      "descricao": "Detergente",
+      "preco": 2,
+      "estoque": 54,
+      "id": 8
     }
   ],
   "usuarios": [

@@ -1,15 +1,28 @@
 <div class="container">
     <form #f="ngForm" (ngSubmit)="gravar(f.value)">
-        <input class="form-control m-2" type="text" ngModel name="descricao" placeholder="Informe a descrição" />
-        <input class="form-control m-2" type="number" ngModel name="preco" placeholder="Informe o preço R$" />
-        <input class="form-control m-2" type="number" ngModel name="estoque" placeholder="Informe o estoque" />
+        <input required class="form-control mt-2" type="text" #fnome="ngModel" ngModel name="descricao" placeholder="Informe a descrição" />
+            <div *ngIf="fnome.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
 
-        <button class="btn btn-outline-primary m-2">Salvar</button>
-        <button class="btn btn-outline-danger m-2" (click)="limparMsg()" type="reset">Cancelar</button>
+        <input required class="form-control mt-2" type="number" #fpreco="ngModel" ngModel name="preco" placeholder="Informe o preço R$" />
+            <div *ngIf="fpreco.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
+
+        <input required class="form-control mt-2" type="number" #festoque="ngModel" ngModel name="estoque" placeholder="Informe o estoque" />
+            <div *ngIf="festoque.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
+
+        <div>
+            <button [disabled]="f.invalid" class="btn btn-outline-primary m-2">Salvar</button>
+            <button class="btn btn-outline-danger m-2" (click)="limparMsg()" type="reset">Cancelar</button>
+        </div>
 
     </form>
 
-    <label>{{ msg }}</label>
+    <label>{{ f.valid }}</label>
 
 </div>
 
@@ -21,7 +34,8 @@
                 <th>Descrição</th>
                 <th>Preço</th>
                 <th>Estoque</th>
-                <th>Açoes</th>
+                <th>Edição</th>
+                <th>Excluir</th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +45,8 @@
                 <td> {{ prod.preco }}</td>
                 <td> {{ prod.estoque }}</td>
                 <td> <a [routerLink]="['/produtos',prod.id]"><i class="material-icons">mode_edit</i></a></td>
+                <td> <a> <i class="material-icons " (click)="excluir(prod.id)" style="cursor: hand;cursor: pointer"
+                            class="material-icons"> delete </i> </a> </td>
             </tr>
         </tbody>
     </table>

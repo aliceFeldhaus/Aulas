@@ -15,7 +15,7 @@ export class CadastroProdutoComponent implements OnInit {
    }
 
   gravar(dados: any){
-     this.serviceProduto.gravar(dados).subscribe(x => this.msg = "Produto criado com sucesso")
+     this.serviceProduto.gravar(dados).subscribe(x => {window.location.reload()})
   }
     
   limparMsg(){
@@ -26,4 +26,7 @@ export class CadastroProdutoComponent implements OnInit {
   
   }
 
+  excluir(id: any){
+    this.serviceProduto.excluir(id).subscribe(x => {window.location.reload()})
+  }
 }

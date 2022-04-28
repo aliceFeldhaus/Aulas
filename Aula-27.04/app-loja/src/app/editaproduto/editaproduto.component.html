@@ -1,5 +1,11 @@
+<div class="container">
+    <input class="form-control m-2" type="text" [(ngModel)]="produto.id"/>
+    <input class="form-control m-2" type="text" [(ngModel)]="produto.descricao"/>
+    <input class="form-control m-2" type="text" [(ngModel)]="produto.preco"/>
+    <input class="form-control m-2" type="text" [(ngModel)]="produto.estoque"/>
 
-<p>{{ produto.id }}</p>
-<p>{{ produto.descricao }}</p>
-<p>{{ produto.preco }}</p>
-<p>{{ produto.estoque }}</p>
+    <button class="btn btn-outline-primary m-2" (click)="efetivaAlteracao()">Gravar</button>
+
+    {{ msg }}
+
+</div>

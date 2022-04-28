@@ -22,4 +22,9 @@ export class AppComponent {
     this.pegarPerfilUsuarioConectado();
   }
 
+  logout(){
+    localStorage.removeItem("userConectado")
+    window.location.reload()
+  }
+
 }

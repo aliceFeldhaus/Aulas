@@ -2,18 +2,24 @@
 
     <form>
         
-        <label>Nome</label>
-        <input class="form-control m-2" type="text" placeholder="Inform seu nome completo">
+        <input required class="form-control mt-3" type="text" #fnome="ngModel" ngModel name="nome" placeholder="Inform seu nome completo">
+            <div *ngIf="fnome.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
 
-        <label>E-mail</label>
-        <input class="form-control m-2" type="email" placeholder="Inform seu e-mail">
+        <input required class="form-control mt-3" type="email" #femail="ngModel" ngModel name="email" placeholder="Inform seu e-mail">
+            <div *ngIf="femail.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
 
-        <label>Telefone</label>
-        <input class="form-control m-2" type="number" placeholder="Inform seu telefone">
+        <input required class="form-control mt-3" type="number" #ffone="ngModel" ngModel name="fone" placeholder="Inform seu telefone">
+            <div *ngIf="ffone.invalid" class="ng-invalid">
+                *Campo obrigatório
+            </div>
 
         <div>
             <button class="btn btn-outline-primary m-2">Cadastrar</button>
-            <button class="btn btn-outline-danger m-2">Cancelar</button>
+            <button class="btn btn-outline-danger m-2" >Cancelar</button>
         </div>
 
     </form>
